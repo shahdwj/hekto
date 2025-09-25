@@ -150,6 +150,7 @@
     left: 20px;
     display: none;
     gap: 15px;
+       
 }
 
 .product:hover .featured-icons {
@@ -158,6 +159,7 @@
     left: 20px;
     display: flex;
     gap: 15px;
+     
     
 }
  
@@ -230,7 +232,66 @@ transition: all .5s;
  }
 
  /*end clients*/
+ /*start shopix*/
+ 
+.shopix-title{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  font-size: 42px;
+  font-family: Josefin Sans;
+  color: #151875;
+  padding-bottom: 60px;
+   
+}
+.shopix .row {
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+.shopix-offers{
+   
+   width: 270px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 27px;
+   text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.shopix-offers h3{
+  font-size: 22px;
+  font-family: Josefin Sans;
+  color: #151875;
+}
+.shopix-offers p{
+  font-size: 16px;
+  font-family: Lato;
+  color: #1A0B5B4D;
+}
+@media screen and (max-width: 740px){
+  
+ .shopix-offers{
+width: 45%;
+}
+  
+}
+@media screen and (max-width: 500px) {
+  .shopix-offers {
+    width: 100%;
+  }
+}
 
+ 
+
+
+
+
+
+ /*end shopix*/
  /*start footer*/
  .footer {
    background-color: #EEEFFB;
