@@ -363,7 +363,7 @@
    .leatest-products .row{
     flex-wrap: wrap;
     justify-content: center;
-    gap: 37px;
+    gap: 25px;
      }
  .latest-title {
     text-align: center;
@@ -388,6 +388,10 @@
     margin-bottom: 30px;
     
 }
+.latest-title .nav a:nth-child(1) {
+    color: #FB2E86;
+    font-weight: 600;  
+}
    .leatest-products .products-card {
     display: flex;
     flex:1 1 280px;
@@ -395,21 +399,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 360px;
-     padding: 28px;
-    background-color: #F7F7F7;
+     max-width: 360px;
+     padding: 20px;
+    background-color:#F7F7F7;
     position: relative;
+    box-shadow: 0 4px 10px rgba(83, 79, 79, 0.25);
+    min-height: 300px;
+    overflow: hidden;
+   }
+ .leatest-products .row .products-card:nth-child(2) {
+    background-color: #ffffff;
 }
- .latest-info {
+     
+    .latest-info {
     display: flex;
     justify-content:space-between;
-     gap: 30px;
-    background-color:white;
     font-family: Josefin Sans;
     color: #151875;
-    white-space:nowarp;
-    width: 100%;  
-     align-items: center;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 0px 10px; 
+    border-top: 1px solid #eee;
+    height: 36px;
 }
  .latest-info h4 {
    
@@ -417,7 +429,8 @@
     font-weight: 500;
   margin: 0;
   padding-left: 10px;
-  white-space: nowrap; 
+   
+  flex: 1;
    }
 .latest .latest-info p {
     font-size: 14px;
@@ -431,13 +444,63 @@
 .latest-product img {
     width: 100%;
     padding:10px;
-  object-fit: cover;
-  height: 306px;         /* الارتفاع ثابت */
-  object-fit: contain;   /* عشان ما تنقص الصورة */
-  
+    object-fit: contain;    
+    width: 100%;
+    padding: 40px;
+    border-radius: 8px;
+     height: 270px;
 }
 
+ .products-card .featured-icons {
+   position: absolute;
+   top: 184px;
+   left:35px;;
+   display: none;
+    
+    
 
+ }
+.products-card:hover .featured-icons {
+     display: flex;
+flex-direction: column;
+gap: 17px;
+ }
+ .sale{
+  display: none;
+ }
+ .products-card:hover .sale  {
+    position: absolute;
+    display: flex;
+    top:  57px;
+    left:  23px; 
+    z-index: 2;
+}
+  @media screen and (max-width: 570px) {
+    .leatest-products .row {
+        flex-direction:row;  
+        align-items: center;    
+    }
+
+    .leatest-products .products-card {
+        width: 100%;       
+        max-width: 100%;   
+    }
+    .latest-title{
+      font-size: 20px;
+    }
+
+     .latest-info h4 {
+        font-size:12px; 
+    }
+
+    .latest-info p {
+        font-size: 12px;  
+    }
+
+    .latest-info span {
+        font-size: 10px; }
+      
+    }
 
   /*end latest*/
   
