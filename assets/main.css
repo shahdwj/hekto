@@ -355,7 +355,24 @@
    font-size: 12px;
    border-radius: 3px;
  }
+@media screen and (max-width: 320px) {
 
+  .featured-product .row {
+    flex-direction: column;    
+    align-items: center;      
+  }
+
+  .product {
+    width: 100%;               
+    max-width: 280px;          
+  }
+.product .featured-a {
+    left:60px !important;           
+    top: 220px;                        
+         
+  }
+  
+}
  /*end featured-product*/
 
 
