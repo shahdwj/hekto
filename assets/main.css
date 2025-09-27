@@ -91,13 +91,13 @@
   padding: 50px 0;
   text-align: left;
   gap: 30px;
-  padding-left: 95px;
+  padding-left: 100px;
    padding-top: 125px;
 }
  .hero-lamp {
     position: absolute;
      top: 0px;
-  left: 50px;
+  left: 20px;
   
     }
     .hero-lamp img {
@@ -161,99 +161,52 @@
 }
 .hero-img img {
     width: 100%;
-    }/*
-@media screen and (max-width: 1427px) {
-    .hero-lamp {
-        top: 1px;
-        left: 30px;
-        width: 330px;
     }
-}
-@media screen and (max-width: 1350px) {
-    .hero-lamp {
-        top: 0px;
-        left: 5px;
-        width: 330px;
-    }
-}
-@media screen and (max-width: 1280px) {
-    .hero-lamp {
-        top: 0px;
-        left: 0px;
-        width: 320px;
-    }
-}
-@media screen and (max-width: 992px) {
-    .hero-lamp {
-        top: 0px;
-        left: -40px;
-        width: 200px;
-    }
-}
-
-@media screen and (max-width: 569px) {
-    .hero-lamp {
-        top: 0px;
-        left: -63px;
-        width: 150px;
-    }
-}
-@media screen and (max-width: 465px) {
-    .hero-lamp {
-        width: 100px;
-    }
-}
-@media screen and (max-width: 460px) {
-    .hero-content {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 2%;
-        gap: 15px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .hero-content {
-        gap: 10px;
-        margin-left: 1%;
-    }
-}
-@media screen and (max-width: 1516px) {
-    .hero-img {
-         width: 50%;
-    }
-    .text-content{
-      width: 50%;
-    }
-}
-@media screen and (max-width: 460px) {
-    .hero-img {
-        max-width: 170px;
-        width: 100%;
-    }
-}
-@media screen and (max-width: 400px) {
-    .hero-img {
-        width: 100%;
-    }
-}*/
-@media screen and (max-width: 992px) {
-  .hero-content {
-    width: 100%;
-    padding: 40px 20px;
-    margin-left: 0;
-    align-items: center;
-    text-align: center;
+ @media screen and (max-width: 1440px) {
+  .hero-lamp {
+    display: none;
   }
-
-  .hero-img {
-    max-width: 100%;
-    margin: 20px auto 0;
+}
+ @media screen and (max-width: 992px) {
+  .hero-content {
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;     
+    width: 100%;
+    gap: 10px;
+    padding: 30px 15px;
   }
 
   .text-content {
+    max-width: 100%;
     align-items: center;
+  }
+
+  .hero-img {
+    max-width: 60%;   
+    margin-top: 20px;
+  }
+}
+ @media screen and (max-width: 500px) {
+  .hero .subtitle {
+    font-size: 14px;
     text-align: center;
+  }
+
+  .hero .title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .desc {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .hero-btn {
+    width: 140px;
+    height: 45px;
+    font-size: 15px;
   }
 }
  
