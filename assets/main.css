@@ -682,19 +682,44 @@ gap: 17px;
     gap:27px;
     height: 345px;
     position: relative;
+     align-items: center;
      
 }
   .top-product {
     border-radius: 50%;
     background-color:#F6F7FB ;
-     padding: 40px;
-       position: relative;
-z-index: 999;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+    transition: box-shadow 0.3s ease;
         
 }
+  .half-circle{ 
+   position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: #987798;
+  border-radius: 50%;
+  z-index: 0;
+   top: 53px;              
+  left: 11%;  
+  transform: translateX(-50%) scale(0.8);
+  opacity: 0;
+   
+   
+             }
+.top-card:hover .half-circle{
+   opacity: 1;
+    transform: scale(1.4);
+   }
+ 
 .top-product img{
   height: 178px;
-  
+  position: relative;
+  z-index: 2;
+   display: block;
+   max-width: 100%;
+ 
 }
 .top-info {
     display: flex;
@@ -722,31 +747,18 @@ background-color: rgba(8, 209, 95, 1);
     height:29px ;
     padding: 10px;
     bottom: 10px;
-    left: 96px;
+     
     top: 214px;
    font-size: 12px;
    border-radius: 3px;
    z-index:999;
    justify-content: center;
+            
+  left: 50%;                 
+  transform: translateX(-50%);
     
   }
-  .half-circle{
-    position: absolute;
-     width: 180px;
-    height: 180px;
-    background-color: #987798;
-    border-radius: 50%;
-    z-index: 0;
-     top: 52px;
-     left: 29px;
-    opacity: 0;
-    transition: trnsform 0.3s, opacity 0.3s ;
-    transform: scale(0.8);
-  }
-  .top-card:hover .half-circle{
-    opacity: 1;
-    transform: scale(1.4);
-  }
+   
 @media screen and (max-width:460px) {
 
    .top-title {
@@ -758,6 +770,7 @@ background-color: rgba(8, 209, 95, 1);
    }
  }
 /*end top*/
+
  /*start newslater*/
  .newslater {
    background-image: url(./img/header/newslater/Rectangle\ 102\(1\).webp);
